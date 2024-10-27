@@ -1,0 +1,225 @@
+/* CSS untuk tampilan form */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #141414;
+}
+
+.header .logo img {
+    width: 120px;
+}
+
+.header nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.7);
+}
+
+.header nav ul li {
+    display: inline;
+}
+
+.header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.7);
+}
+
+.header .user-profile img {
+    width: 40px;
+    border-radius: 50%;
+    text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.7);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    margin: 20px auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="password"], input[type="date"], select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="button"] {
+    background-color: #234e67;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+input[type="button"]:hover {
+    background-color: #234e67;
+}
+
+.error {
+    color: red;
+    font-size: 0.9em;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    display: none;
+}
+
+.footer {
+    background-color: #141414;
+    padding: 20px;
+    overflow: hidden;
+    font-size: 0.9rem;
+    text-align: center;
+    position: relative;
+  }
+  
+  .footer-slider {
+    display: flex;
+    gap: 20px;
+    animation: slide 24s infinite;
+  }
+  
+  .footer-slider span {
+    flex: 0 0 100%;
+    text-align: center;
+    color: white;
+    opacity: 1;
+    transition: opacity 0.5s;
+  }
+  
+  @keyframes slide {
+    0%, 8.33% {
+      transform: translateX(0);
+      opacity: 1;
+    } 
+    
+    33.33%, 41.67% {
+      transform: translateX(-101.5%);
+      opacity: 1;
+    } 
+    
+    66.67%, 75% {
+      transform: translateX(-203%);
+      opacity: 1;
+    } 
+    
+    91.67%, 100% {
+      transform: translateX(0);
+      opacity: 1;
+    } 
+  }
+
+@media only screen and (max-width:600px) {
+    aside {
+        width: 100%;
+        float: none;
+            
+    }
+
+    article {
+        width: 100%;
+        float: none;
+
+    }
+}
+
+@media only screen and (min-width:600px) {
+    aside {
+        width: 100%;
+        float: none;
+            
+    }
+
+    article {
+        width: 100%;
+        float: none;
+
+    }
+}
+
+@media only screen and (min-width:768px) {
+    aside {
+        width: 25%;
+        float: left;
+            
+    }
+
+    article {
+        width: 75%;
+        float: left;
+
+    }
+}
+
+@media only screen and (min-width:992px) {
+    aside {
+        width: 35%;
+        float: left;
+            
+    }
+
+    article {
+        width: 65%;
+        float: left;
+
+    }
+}
+
+@media only screen and (min-width:1200px) {
+    aside {
+        width: 60%;
+        float: left;
+            
+    }
+
+    article {
+        width: 40%;
+        float: left;
+
+    }
+    
+}
+
+@media screen and (orientation: landscape) {
+    body{
+        background: #232222;
+    }
+}
+
+@media screen and (orientation: portrait) {
+    body{
+        background: #232222;
+    }
+}
